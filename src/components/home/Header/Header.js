@@ -107,10 +107,12 @@ const Header = () => {
                           className="text-sm flex flex-col gap-1"
                         >
                           <li className="headerSedenavLi">New Arrivals</li>
-                          <li className="headerSedenavLi">Gudgets</li>
-                          <li className="headerSedenavLi">Accessories</li>
-                          <li className="headerSedenavLi">Electronics</li>
+                          <li className="headerSedenavLi">Clothing</li>
+                          <li className="headerSedenavLi">Miscellaneous</li>
+                          <li className="headerSedenavLi">Wigs</li>
+                          <li className="headerSedenavLi">Acessories</li>
                           <li className="headerSedenavLi">Others</li>
+
                         </motion.ul>
                       )}
                     </div>
@@ -129,11 +131,13 @@ const Header = () => {
                           transition={{ duration: 0.4 }}
                           className="text-sm flex flex-col gap-1"
                         >
-                          <li className="headerSedenavLi">New Arrivals</li>
-                          <li className="headerSedenavLi">Gudgets</li>
-                          <li className="headerSedenavLi">Accessories</li>
-                          <li className="headerSedenavLi">Electronics</li>
+                        <li className="headerSedenavLi">New Arrivals</li>
+                          <li className="headerSedenavLi">Clothing</li>
+                          <li className="headerSedenavLi">Miscellaneous</li>
+                          <li className="headerSedenavLi">Wigs</li>
+                          <li className="headerSedenavLi">Acessories</li>
                           <li className="headerSedenavLi">Others</li>
+
                         </motion.ul>
                       )}
                     </div>
