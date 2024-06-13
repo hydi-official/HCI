@@ -182,25 +182,7 @@ const Banner = () => {
           </div>
         </Link>
        
-          <div>
-            {/* ===== New Slide with uploaded content ===== */}
-            <div className="relative w-full h-full">
-              <img src={bestSellerFour} alt="Amazon Home Services Offer" className="w-full h-full object-cover" />
-              <div className="absolute bottom-0 left-0 p-4">
-                <h2 className="text-white text-2xl md:text-3xl lg:text-4xl">
-                  Get 10% off
-                </h2>
-                <p className="text-white text-lg md:text-xl lg:text-2xl">
-                  Spa and salon home services with Prime
-                </p>
-                <Link to="/offer">
-                  <button className="bg-black text-white mt-4 py-2 px-4 rounded hover:bg-gray-800">
-                    Shop Now
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
+         
         
       </Slider>
     </div>
