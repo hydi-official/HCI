@@ -26,7 +26,7 @@ import NewArrivals from "./components/home/NewArrivals/NewArrivals.js";
 import Miscellaneous from "./pages/Miscellaneous/Miscellaneous.js";
 import Accessories from "./pages/Accessories/Accessories.js";
 import Wigs from "./pages/Wigs/Wigs.js";
-import Others from "src/pages/Others/Others.js";
+import Others from "./pages/Others/Others.js";
 import Shop from "./pages/Shop/Shop";
 
 const Layout = () => {
