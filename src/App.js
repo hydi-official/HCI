@@ -23,6 +23,7 @@ import Payment from "./pages/payment/Payment";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Clothing from "./pages/Clothing/Clothing.js";
 import NewArrivals from "./components/home/NewArrivals/NewArrivals.js";
+import Miscellaneous from "./pages/Miscellaneous/Miscellaneous.js"
 import Shop from "./pages/Shop/Shop";
 
 const Layout = () => {
@@ -54,8 +55,11 @@ const router = createBrowserRouter(
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/newArrivals" element={<NewArrivals />}></Route>
         <Route path="/clothing" element={<Clothing/>}></Route>
+        <Route path="/Miscellaneous" element={<Miscellaneous/>}></Route>
+        <Route path="/Accessories" element={<Clothing/>}></Route>
+        <Route path="/Wigs" element={<Clothing/>}></Route>
+        <Route path="/Others" element={<Clothing/>}></Route>
         <Route path="/paymentgateway" element={<Payment />}></Route>
-
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>
