@@ -21,6 +21,8 @@ import Journal from "./pages/Journal/Journal";
 import Offer from "./pages/Offer/Offer";
 import Payment from "./pages/payment/Payment";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import Clothing from "./pages/Clothing/Clothing.js";
+import NewArrivals from "./components/home/NewArrivals/NewArrivals.js";
 import Shop from "./pages/Shop/Shop";
 
 const Layout = () => {
@@ -50,7 +52,10 @@ const router = createBrowserRouter(
         <Route path="/offer" element={<Offer />}></Route>
         <Route path="/product/:_id" element={<ProductDetails />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/newArrivals" element={<NewArrivals />}></Route>
+        <Route path="/clothing" element={<Clothing/>}></Route>
         <Route path="/paymentgateway" element={<Payment />}></Route>
+
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>
