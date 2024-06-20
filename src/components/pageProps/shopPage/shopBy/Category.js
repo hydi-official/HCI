@@ -2,18 +2,20 @@ import React, { useState } from "react";
 // import { FaPlus } from "react-icons/fa";
 import { ImPlus } from "react-icons/im";
 import NavTitle from "./NavTitle";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   const [showSubCatOne, setShowSubCatOne] = useState(false);
   const items = [
     {
       _id: 990,
-      title: "New Arrivals",
+      title: "New kono Arrivals",
       icons: true,
+      Link:'/NewArrivals'
     },
     {
       _id: 991,
-      title: "Clothing",
+      title: "Clothing ky",
     },
     {
       _id: 992,
