@@ -107,7 +107,7 @@ export const paginationItems = [
     img: spfOne,
     productName: "Cap for Boys",
     price: "35.00",
-    color: "Blank and White",
+    color: "Black",
     brand:"Iphone",
     higherLevelTag:"clothing",
     lowerLevelTage:"Outwear",

@@ -14,16 +14,22 @@ const Header = () => {
   const [category, setCategory] = useState(false);
   const [brand, setBrand] = useState(false);
   const location = useLocation();
+
   useEffect(() => {
-    let ResponsiveMenu = () => {
+    let responsiveMenu = () => {
       if (window.innerWidth < 667) {
         setShowMenu(false);
       } else {
         setShowMenu(true);
       }
     };
-    ResponsiveMenu();
-    window.addEventListener("resize", ResponsiveMenu);
+
+    responsiveMenu();
+    window.addEventListener("resize", responsiveMenu);
+
+    return () => {
+      window.removeEventListener("resize", responsiveMenu);
+    };
   }, []);
 
   return (
@@ -110,9 +116,8 @@ const Header = () => {
                           <li className="headerSedenavLi">Clothing</li>
                           <li className="headerSedenavLi">Miscellaneous</li>
                           <li className="headerSedenavLi">Wigs</li>
-                          <li className="headerSedenavLi">Acessories</li>
+                          <li className="headerSedenavLi">Accessories</li>
                           <li className="headerSedenavLi">Others</li>
-
                         </motion.ul>
                       )}
                     </div>
@@ -129,15 +134,65 @@ const Header = () => {
                           initial={{ y: 15, opacity: 0 }}
                           animate={{ y: 0, opacity: 1 }}
                           transition={{ duration: 0.4 }}
-                          className="text-sm flex flex-col gap-1"
+                          className="text-sm flex flex-col gap-1 max-h-60 overflow-y-auto"
                         >
-                        <li className="headerSedenavLi">New Arrivals</li>
-                          <li className="headerSedenavLi">Clothing</li>
-                          <li className="headerSedenavLi">Miscellaneous</li>
-                          <li className="headerSedenavLi">Wigs</li>
-                          <li className="headerSedenavLi">Acessories</li>
-                          <li className="headerSedenavLi">Others</li>
-
+                          <li className="headerSedenavLi">
+        <NavLink to="/Nike">Nike</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Adidas">Adidas</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Gucci">Gucci</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Prada">Prada</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/LouisVuitton">Louis Vuitton</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Versace">Versace</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Burberry">Burberry</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Dior">Dior</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Hermes">Hermès</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Rolex">Rolex</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Fendi">Fendi</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Balenciaga">Balenciaga</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Zara">Zara</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Timberland">Timberland</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Converse">Converse</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Vans">Vans</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Supreme">Supreme</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Fila">Fila</NavLink>
+      </li>
+      <li className="headerSedenavLi">
+        <NavLink to="/Reebok">Reebok</NavLink>
+      </li>
                         </motion.ul>
                       )}
                     </div>
