@@ -104,7 +104,7 @@ const Banner = () => {
   return (
     <div className="w-full bg-white">
       <Slider {...settings}>
-        <Link to="/offer">
+        {/* <Link to="/offer">
           <div>
             <Image imgSrc={bannerImgOne} />
           </div>
@@ -118,7 +118,7 @@ const Banner = () => {
           <div>
             <Image imgSrc={bannerImgThree} />
           </div>
-        </Link>
+        </Link> */}
           <div>
             {/* ===== New Slide ===== */}
             <section className="py-4 md:py-5 lg:py-20 bg-gray-100">
@@ -150,7 +150,6 @@ const Banner = () => {
             </section>
           </div>
 
-          <Link to="/offer">
           <div>
             {/* ===== New Slide ===== */}
             <section className="py-4 md:py-5 lg:py-20 bg-gray-100">
@@ -180,7 +179,6 @@ const Banner = () => {
               </div>
             </section>
           </div>
-        </Link>
        
          
         
