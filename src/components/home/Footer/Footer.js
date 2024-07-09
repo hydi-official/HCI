@@ -5,6 +5,7 @@ import FooterListTitle from "./FooterListTitle";
 import { paymentCard } from "../../../assets/images";
 import Image from "../../designLayouts/Image";
 import { Link } from "react-router-dom";
+import logo from '../../../assets/Logo/Kenan Amani Logo.png'
 
 const Footer = () => {
   const [emailInfo, setEmailInfo] = useState("");
@@ -38,7 +39,7 @@ const Footer = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sint
               ab ullam, numquam nesciunt in.
             </p>
-            <ul className="flex items-center gap-2">
+            {/* <ul className="flex items-center gap-2">
               <a
                 href="https://www.youtube.com/@reactjsBD"
                 target="_blank"
@@ -75,7 +76,10 @@ const Footer = () => {
                   <FaLinkedin />
                 </li>
               </a>
-            </ul>
+            </ul> */}
+            <div>
+              <img src={logo} className="w-[200px]"/>
+            </div>
           </div>
         </div>
         <div>
