@@ -9,181 +9,110 @@ import {
 } from "../../assets/images";
 import Image from "../designLayouts/Image";
 import bestSellerFour from '../../assets/images/products/bestSeller/bestSellerFour.webp';
-
+import HeroSectionImage from "../../assets/images/banner/HeroSectionImage.jpg";
 const Banner = () => {
-  const [dotActive, setDocActive] = useState(0);
-  const settings = {
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    beforeChange: (prev, next) => {
-      setDocActive(next);
-    },
-    appendDots: (dots) => (
-      <div
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "7%",
-          transform: "translateY(-50%)",
-        }}
-      >
-        <ul style={{ margin: "0px" }}> {dots} </ul>
-      </div>
-    ),
-    customPaging: (i) => (
-      <div
-        style={
-          i === dotActive
-            ? {
-                width: "30px",
-                color: "#262626",
-                borderRight: "3px #262626 solid",
-                padding: "8px 0",
-                cursor: "pointer",
-              }
-            : {
-                width: "30px",
-                color: "transparent",
-                borderRight: "3px white solid",
-                padding: "8px 0",
-                cursor: "pointer",
-              }
-        }
-      >
-        0{i + 1}
-      </div>
-    ),
-    responsive: [
-      {
-        breakpoint: 576,
-        settings: {
-          dots: true,
-          appendDots: (dots) => (
-            <div
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "2%",
-                transform: "translateY(-50%)",
-              }}
-            >
-              <ul style={{ margin: "0px" }}> {dots} </ul>
-            </div>
-          ),
-          customPaging: (i) => (
-            <div
-              style={
-                i === dotActive
-                  ? {
-                      width: "25px",
-                      color: "#262626",
-                      borderRight: "3px #262626 solid",
-                      cursor: "pointer",
-                      fontSize: "12px",
-                    }
-                  : {
-                      width: "25px",
-                      color: "transparent",
-                      borderRight: "3px white solid",
-                      cursor: "pointer",
-                      fontSize: "12px",
-                    }
-              }
-            >
-              0{i + 1}
-            </div>
-          ),
-        },
-      },
-    ],
-  };
+  // const [dotActive, setDocActive] = useState(0);
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   autoplay: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   arrows: false,
+  //   beforeChange: (prev, next) => {
+  //     setDocActive(next);
+  //   },
+  //   appendDots: (dots) => (
+  //     <div
+  //       style={{
+  //         position: "absolute",
+  //         top: "50%",
+  //         left: "7%",
+  //         transform: "translateY(-50%)",
+  //       }}
+  //     >
+  //       <ul style={{ margin: "0px" }}> {dots} </ul>
+  //     </div>
+  //   ),
+  //   customPaging: (i) => (
+  //     <div
+  //       style={
+  //         i === dotActive
+  //           ? {
+  //               width: "30px",
+  //               color: "#262626",
+  //               borderRight: "3px #262626 solid",
+  //               padding: "8px 0",
+  //               cursor: "pointer",
+  //             }
+  //           : {
+  //               width: "30px",
+  //               color: "transparent",
+  //               borderRight: "3px white solid",
+  //               padding: "8px 0",
+  //               cursor: "pointer",
+  //             }
+  //       }
+  //     >
+  //       0{i + 1}
+  //     </div>
+  //   ),
+  //   responsive: [
+  //     {
+  //       breakpoint: 576,
+  //       settings: {
+  //         dots: true,
+  //         appendDots: (dots) => (
+  //           <div
+  //             style={{
+  //               position: "absolute",
+  //               top: "50%",
+  //               left: "2%",
+  //               transform: "translateY(-50%)",
+  //             }}
+  //           >
+  //             <ul style={{ margin: "0px" }}> {dots} </ul>
+  //           </div>
+  //         ),
+  //         customPaging: (i) => (
+  //           <div
+  //             style={
+  //               i === dotActive
+  //                 ? {
+  //                     width: "25px",
+  //                     color: "#262626",
+  //                     borderRight: "3px #262626 solid",
+  //                     cursor: "pointer",
+  //                     fontSize: "12px",
+  //                   }
+  //                 : {
+  //                     width: "25px",
+  //                     color: "transparent",
+  //                     borderRight: "3px white solid",
+  //                     cursor: "pointer",
+  //                     fontSize: "12px",
+  //                   }
+  //             }
+  //           >
+  //             0{i + 1}
+  //           </div>
+  //         ),
+  //       },
+  //     },
+  //   ],
+  // };
   return (
-    <div className="w-full bg-white">
-      <Slider {...settings}>
-        {/* <Link to="/offer">
-          <div>
-            <Image imgSrc={bannerImgOne} />
-          </div>
-        </Link>
-        <Link to="/offer">
-          <div>
-            <Image imgSrc={bannerImgTwo} />
-          </div>
-        </Link>
-        <Link to="/offer">
-          <div>
-            <Image imgSrc={bannerImgThree} />
-          </div>
-        </Link> */}
-          <div>
-            {/* ===== New Slide ===== */}
-            <section className="py-4 md:py-5 lg:py-20 bg-gray-100">
-              <div className="container">
-                <div className="flex flex-col-reverse md:flex-row justify-between gap-6 md:gap-0">
-                  <div className="w-full md:w-1/2  md:pl-[300px] ">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-0 ml-8">
-                      Final Offer
-                    </h2>
-                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 md:mb-0 ml-8">
-                      Up to <span className="text-orange-500">50%</span> sale for all furniture items!
-                    </p>
-                    <Link to="/offer">
-                    <button className="bg-black text-white mt-12 py-3 px-4 rounded hover:bg-gray-800 ml-8">
-                      Shop Now
-                    </button>
-                    </Link>
-
-                  </div>
-                  <div className="md:w-1/2 flex justify-center items-center md:-ml-20">
-                    <img
-                      src={bestSellerFour}
-                      alt="Special Offer"
-                      className="w-60 h-auto "
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <div>
-            {/* ===== New Slide ===== */}
-            <section className="py-4 md:py-5 lg:py-20 bg-gray-100">
-              <div className="container">
-                <div className="flex flex-col-reverse md:flex-row justify-between gap-6 md:gap-0">
-                  <div className="w-full md:w-1/2  md:pl-[300px] ">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-0 ml-8">
-                      Final Offer
-                    </h2>
-                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 md:mb-0 ml-8">
-                      Up to <span className="text-orange-500">50%</span> sale for all furniture items!
-                    </p>
-                    <Link to="/offer">
-                    <button className="bg-black text-white mt-12 py-3 px-4 rounded hover:bg-gray-800 ml-8">
-                      Shop Now
-                    </button>
-                    </Link>
-                  </div>
-                  <div className="md:w-1/2 flex justify-center items-center md:-ml-20">
-                    <img
-                      src={bestSellerFour}
-                      alt="Special Offer"
-                      className="w-60 h-auto "
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-       
-         
-        
-      </Slider>
+    <div className="relative h-[440px] bg-cover bg-center" style={{ backgroundImage: `url(${HeroSectionImage})` }}>
+    <div className="p-6">
+      <h1 className="text-2xl font-syncopate font-medium  mb-4 text-left text-[#180948]">Welcome to</h1>
+      <h2 className="text-6xl md:text-[100] font-syncopate  font-bold mb-12 text-left text-[#180948]">Kenan Amani</h2>
+      <Link to='/shop'>
+      <button className="bg-[#180948] hover:bg-purple-900 text-white font-bold py-2 px-6 rounded mt-8 text-left">
+        Shop Now
+      </button>
+      </Link>
     </div>
+  </div>
   );
 };
 

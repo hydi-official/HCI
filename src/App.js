@@ -80,7 +80,7 @@ const router = createBrowserRouter(
         <Route path="/Miscellaneous" element={<Miscellaneous/>}></Route>
         <Route path="/Accessories" element={<Accessories/>}></Route>
         <Route path="/Wigs" element={<Wigs/>}></Route>
-        <Route path="/Addidas" element={<Adidas/>}></Route>
+        <Route path="/Adidas" element={<Adidas/>}></Route>
         <Route path="/Balenciaga" element={<Balenciaga/>}></Route>
         <Route path="/Burberry" element={<Burberry/>}></Route>
         <Route path="/Dior" element={<Dior/>}></Route>

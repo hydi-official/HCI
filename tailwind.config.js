@@ -19,9 +19,11 @@ module.exports = {
       fontFamily: {
         bodyFont: ["DM Sans", "sans-serif"],
         titleFont: ["Poppins", "sans-serif"],
+        syncopate: ['Syncopate', 'sans-serif'],
+
       },
       colors: {
-        primeColor: "#262626",
+        primeColor: "#180948",
         lightText: "#6D6D6D",
       },
       boxShadow: {
