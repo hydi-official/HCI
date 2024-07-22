@@ -54,7 +54,7 @@ const Header = () => {
                   {navBarList.map(({ _id, title, link }) => (
                     <NavLink
                       key={_id}
-                      className="flex font-normal hover:font-bold w-20 h-6 justify-center items-center px-12 text-base text-[#767676] hover:underline underline-offset-[4px] decoration-[1px] hover:text-[#262626] md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0"
+                      className="flex font-normal hover:font-bold w-20 h-6 justify-center items-center px-12 text-base text-[#180948] hover:underline underline-offset-[4px] decoration-[1px] hover:text-[#180948] md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0"
                       to={link}
                       state={{ data: location.pathname.split("/")[1] }}
                     >
@@ -85,7 +85,7 @@ const Header = () => {
                     <ul className="text-gray-200 flex flex-col gap-2">
                       {navBarList.map((item) => (
                         <li
-                          className="font-normal hover:font-bold items-center text-lg text-gray-200 hover:underline underline-offset-[4px] decoration-[1px] hover:text-white md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0"
+                          className="font-normal hover:font-bold items-center text-lg text-[#180948] hover:underline underline-offset-[4px] decoration-[1px] hover:text-white md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0"
                           key={item._id}
                         >
                           <NavLink

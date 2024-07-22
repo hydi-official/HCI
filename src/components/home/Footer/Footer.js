@@ -124,11 +124,11 @@ const Footer = () => {
         </div>
         <div className="col-span-2 flex flex-col items-center w-full px-4">
           {/* <FooterListTitle title="Subscribe to our newsletter." /> */}
-          {/* <Link to="/contact"> */}
+          <Link to='/contact'> 
             <button className="bg-[#180948] text-white py-2 px-4 rounded flex items-center">
               Contact Us <span className="ml-2">➔</span>
             </button>
-          {/* </Link> */}
+           </Link>
    
         </div>
       </div>

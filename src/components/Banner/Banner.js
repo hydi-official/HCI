@@ -105,7 +105,7 @@ const Banner = () => {
     <div className="relative h-[440px] bg-cover bg-center" style={{ backgroundImage: `url(${HeroSectionImage})` }}>
     <div className="p-6">
       <h1 className="text-2xl font-syncopate font-medium  mb-4 text-left text-[#180948]">Welcome to</h1>
-      <h2 className="text-6xl md:text-[100] font-syncopate  font-bold mb-12 text-left text-[#180948]">Kenan Amani</h2>
+      <h2 className="text-6xl md:text-[100] font-syncopate  font-bold mb-[150px] text-left text-[#180948]">Kenan Amani</h2>
       <Link to='/shop'>
       <button className="bg-[#180948] hover:bg-purple-900 text-white font-bold py-2 px-6 rounded mt-8 text-left">
         Shop Now

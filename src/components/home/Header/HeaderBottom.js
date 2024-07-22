@@ -138,8 +138,8 @@ const HeaderBottom = () => {
           </div>
           <div className="flex gap-4 mt-2 lg:mt-0 items-center pr-6 cursor-pointer relative">
             <div onClick={() => setShowUser(!showUser)} className="flex">
-              <FaUser />
-              <FaCaretDown />
+              <FaUser className="text-[#180948]" />
+              <FaCaretDown className="text-[#180948]" />
             </div>
             {showUser && (
               <motion.ul
@@ -168,7 +168,7 @@ const HeaderBottom = () => {
             )}
             <Link to="/cart">
               <div className="relative">
-                <FaShoppingCart />
+                <FaShoppingCart className="text-[#180948]" />
                 <span className="absolute font-titleFont top-3 -right-2 text-xs w-4 h-4 flex items-center justify-center rounded-full bg-primeColor text-white">
                   {products.length > 0 ? products.length : 0}
                 </span>

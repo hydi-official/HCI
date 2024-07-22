@@ -61,7 +61,7 @@ const Product = (props) => {
             >
               Add to Cart
               <span>
-                <FaShoppingCart />
+                <FaShoppingCart className="text-[#180948]"  />
               </span>
             </li>
             <li
