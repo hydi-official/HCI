@@ -56,19 +56,17 @@ const SignIn = () => {
             <p className="w-full px-4 py-10 text-green-500 font-medium font-titleFont">
               {successMsg}
             </p>
-            <Link to="/signup">
-              <button
+            <Link to="/">
+              {/* <button
                 className="w-full h-10 bg-primeColor text-gray-200 rounded-md text-base font-titleFont font-semibold tracking-wide hover:bg-black hover:text-white duration-300"
               >
                 Sign Up
-              </button>
+              </button> */}
             </Link>
           </div>
         ) : (
           <form className="w-[500px] md:w-[450px] h-[500px] flex flex-col items-center justify-center bg-white bg-opacity-90 p-8 rounded-lg">
-            <Link to="/">
-              <img src={logoLight} alt="logo" className="w-28 mb-4" />
-            </Link>
+           
             <div className=""> 
           <img src={frame3}/>
         </div>
@@ -105,12 +103,13 @@ const SignIn = () => {
                   </p>
                 )}
               </div>
+              <Link to='/'>
               <button
-                onClick={handleSignUp}
                 className="bg-primeColor hover:bg-black text-white cursor-pointer w-full text-base font-medium h-10 rounded-md duration-300"
               >
                 Sign In
               </button>
+              </Link>
               <p className="text-sm text-center font-titleFont font-medium mt-4">
                 Don't have an account?{" "}
                 <Link to="/signup">
