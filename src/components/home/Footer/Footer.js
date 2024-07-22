@@ -36,8 +36,7 @@ const Footer = () => {
           <FooterListTitle title=" More about Kenan amani Shop" />
           <div className="flex flex-col gap-6">
             <p className="text-base w-full xl:w-[80%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sint
-              ab ullam, numquam nesciunt in.
+            Kenan Amani is a destination for curated fashion and unique finds, offering timeless essentials and exceptional quality to elevate your style.
             </p>
             {/* <ul className="flex items-center gap-2">
               <a
