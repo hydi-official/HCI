@@ -7,6 +7,10 @@ import {
   spfThree,
   spfFour,
 } from "../../../assets/images/index";
+import im1 from "../../../assets/images/products/specialOffer/c-d-x-PDX_a_82obo-unsplash.jpg"
+import im2 from "../../../assets/images/products/specialOffer/curology-DGH1u80sZik-unsplash.jpg"
+import im3 from "../../../assets/images/products/specialOffer/domino-studio-164_6wVEHfI-unsplash.jpg"
+import im4 from "../../../assets/images/products/specialOffer/rachit-tank-2cFZ_FB08UM-unsplash.jpg"
 
 const SpecialOffers = () => {
   return (
@@ -24,8 +28,8 @@ const SpecialOffers = () => {
         />
         <Product
           _id="1102"
-          img={spfTwo}
-          productName="Tea Table"
+          img={im2}
+          productName="Curology Set"
           price="180.00"
           color="Gray"
           badge={true}
