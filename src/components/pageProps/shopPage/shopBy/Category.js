@@ -56,7 +56,7 @@ const Category = () => {
                   onClick={() => setShowSubCatOne(!showSubCatOne)}
                   className="text-[10px] lg:text-xs cursor-pointer text-gray-400 hover:text-primeColor duration-300"
                 >
-                  <ImPlus />
+                  {/* <ImPlus /> */}
                 </span>
               )}
             </li>

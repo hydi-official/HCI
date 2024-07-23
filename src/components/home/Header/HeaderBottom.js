@@ -55,31 +55,31 @@ const HeaderBottom = () => {
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="absolute top-36 z-50 bg-primeColor w-auto text-[#767676] h-auto p-4 pb-6"
+                className="absolute top-36 z-50 bg-white w-auto text-[#ACACAC] h-auto p-4 pb-6"
               >
                
-                <Link to='/Clothing'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <Link to='/Clothing'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-[#180948] hover:text-[#180948] duration-300 cursor-pointer">
                   Blouses
                 </li>
                 </Link>
 
-                <Link to='/Miscellaneous'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <Link to='/Miscellaneous'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-[#180948] hover:text-[#180948] duration-300 cursor-pointer">
                   Dresses
                 </li>
                 </Link>
 
-                <Link to='/Accessories'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <Link to='/Accessories'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-[#180948] hover:text-[#180948] duration-300 cursor-pointer">
                   Footwear
                 </li>
                 </Link>
 
-                <Link to='/NewArrivals'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <Link to='/NewArrivals'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-[#180948] hover:text-[#180948] duration-300 cursor-pointer">
                   New Arrivals
                 </li>
                 </Link>
 
               
-                <Link to='/Others'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                <Link to='/Others'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-[#180948] hover:text-[#180948] duration-300 cursor-pointer">
                   Pants
                 </li>
                 </Link>
