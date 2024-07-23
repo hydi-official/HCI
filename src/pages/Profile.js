@@ -29,7 +29,7 @@ const Profile = () => {
         </div>
         <div className="md:w-2/3 w-full">
           <div className="bg-white p-6 rounded-lg shadow-md mb-4">
-            <h3 className="text-2xl font-semibold mb-4">Basic Information</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-[#180948]">Basic Information</h3>
             <div className="mb-2 flex items-center">
               <FaUser className="text-gray-600 mr-2" />
               <div>
@@ -61,7 +61,7 @@ const Profile = () => {
           </div>
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="bg-white p-6 rounded-lg shadow-md lg:w-1/2">
-              <h3 className="text-2xl font-semibold mb-4">Update Profile</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-[#180948]">Update Profile</h3>
               <form>
                 <div className="mb-4 flex items-center">
                   <FaUser className="text-gray-600 mr-2" />
