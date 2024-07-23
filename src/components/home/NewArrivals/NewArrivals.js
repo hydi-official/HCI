@@ -10,6 +10,12 @@ import {
 } from "../../../assets/images/index";
 
 import new1 from "../../../assets/images/products/newArrival/New1.jpg";
+import new2 from "../../../assets/images/products/newArrival/new2.jpg";
+import new3 from "../../../assets/images/products/newArrival/new3.jpg";
+import new4 from "../../../assets/images/products/newArrival/new4.jpg";
+
+
+
 
 import nii from '../../../assets/images/nii.png';
 import SampleNextArrow from "./SampleNextArrow";
@@ -60,7 +66,7 @@ const NewArrivals = () => {
             img={new1}
             productName="Romantic Floral Dress"
             price="100.00"
-            color="color"
+            color="colors"
             badge={true}
             des="Elevate your wardrobe with our enchanting Romantic Floral Dress, designed to capture hearts and turn heads. This timeless piece is perfect for any occasion, from a casual day out to a special evening event."
           />
@@ -68,34 +74,34 @@ const NewArrivals = () => {
         <div className="px-2">
           <Product
             _id="100002"
-            img={newArrTwo}
-            productName="Smart Watch"
-            price="250.00"
-            color="Black"
+            img={new2}
+            productName="Solid Hem Halter"
+            price="15.00"
+            color="colors"
             badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="The Solid Hem Halter is a versatile piece with a classic halter neckline, perfect for any occasion. Made from high-quality, breathable fabric, it ensures comfort while maintaining a chic, timeless look"
           />
         </div>
         <div className="px-2">
           <Product
             _id="100003"
-            img={newArrThree}
-            productName="cloth Basket"
-            price="80.00"
-            color="Mixed"
+            img={new3}
+            productName="Women’s Party Dress"
+            price="20.00"
+            color="colors"
             badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="The Women's Party Dress features an elegant design with intricate detailing, perfect for special occasions. Its flattering silhouette and luxurious fabric ensure you make a stunning impression"
           />
         </div>
         <div className="px-2">
           <Product
             _id="100004"
-            img={newArrFour}
-            productName="Funny toys for babies"
-            price="60.00"
-            color="Mixed"
+            img={new4}
+            productName="Solid Parted Dress"
+            price="15.00"
+            color="colors"
             badge={false}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="The Solid Parted Dress boasts a sleek, sophisticated design with a unique parted detail, ideal for making a statement at any event. Its refined silhouette and high-quality fabric offer both style and comfort."
           />
         </div>
         <div className="px-2">
