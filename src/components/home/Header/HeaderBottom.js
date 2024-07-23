@@ -73,10 +73,8 @@ const HeaderBottom = () => {
                   Accessories
                 </li>
                 </Link>
-                <Link to='/Wigs'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                  Wigs
-                </li>
-                </Link>
+
+              
                 <Link to='/Others'><li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
                   Others
                 </li>
@@ -158,12 +156,13 @@ const HeaderBottom = () => {
                     Sign Up
                   </li>
                 </Link>
+
+                <Link to='/profile'>
                 <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                   Profile
                 </li>
-                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
-                  Others
-                </li>
+                </Link>
+               
               </motion.ul>
             )}
             <Link to="/cart">

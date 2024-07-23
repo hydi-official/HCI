@@ -26,12 +26,7 @@ const Category = () => {
       icons: true,
       link: "/miscellaneous", 
     },
-    {
-      _id: 993,
-      title: "Wigs",
-      link: "/wigs", 
-
-    },
+   
     {
       _id: 994,
       title: "Others",

@@ -8,6 +8,8 @@ import {
   newArrThree,
   newArrFour,
 } from "../../../assets/images/index";
+
+import nii from '../../../assets/images/nii.png';
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
 
@@ -97,7 +99,7 @@ const NewArrivals = () => {
         <div className="px-2">
           <Product
             _id="100005"
-            img={newArrTwo}
+            img={nii}
             productName="Funny toys for babies"
             price="60.00"
             color="Mixed"

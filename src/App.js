@@ -46,6 +46,8 @@ import Timberland from "./pages/Brands/Timberland.js";
 import Vans from "./pages/Brands/Vans.js";
 import versace from './pages/Brands/Versace';
 import Zara from "./pages/Brands/Zara.js";
+import profile from "./pages/Profile.js";
+import Profile from "./pages/Profile.js";
 
 const Layout = () => {
   return (
@@ -103,6 +105,8 @@ const router = createBrowserRouter(
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>
+      <Route path="/profile" element={<Profile />}></Route>
+
     </Route>
   )
 );
