@@ -4,6 +4,8 @@ import { logoLight } from "../../assets/images";
 import frame2 from "../../assets/images/heather-ford-5gkYsrH_ebY-unsplash.jpg";
 import frame1 from "../../assets/images/SignIn.png";
 import frame3 from "../../assets/images/SignUp.png";
+import { FaArrowLeft } from 'react-icons/fa';
+
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -69,7 +71,13 @@ const SignUp = () => {
           </div>
         ) : (
           <form className="w-[500px] md:w-[450px] h-[600px] flex flex-col items-center justify-center bg-white bg-opacity-90 p-8 rounded-lg">
-          
+             <div className="absolute top-4 left-4">
+              <Link to='/'>
+                <div className="bg-[#949292] p-3 text-4xl rounded-full">
+                  <FaArrowLeft className="text-white" />
+                </div>
+              </Link>
+            </div>
             <div>
               <img src={frame3} alt="Form Illustration" />
             </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { logoLight } from "../../assets/images";
+import { FaArrowLeft } from 'react-icons/fa';
 import frame2 from "../../assets/images/heather-ford-5gkYsrH_ebY-unsplash.jpg";
 import frame1 from "../../assets/images/SignIn.png";
 import frame3 from "../../assets/images/formie.png";
@@ -68,9 +68,15 @@ const SignIn = () => {
             </Link>
           </div>
         ) : (
-          <form className="w-[500px] md:w-[450px] h-[500px] flex flex-col items-center justify-center bg-white bg-opacity-90 p-8 rounded-lg">
-           
-            <div>
+          <form className="relative w-[500px] md:w-[450px] h-[500px] flex flex-col items-center justify-center bg-white bg-opacity-90 p-8 rounded-lg">
+            <div className="absolute top-4 left-4">
+              <Link to='/'>
+                <div className="bg-[#949292] p-3 text-4xl rounded-full">
+                  <FaArrowLeft className="text-white" />
+                </div>
+              </Link>
+            </div>
+            <div className="mb-4">
               <img src={frame3} alt="Form Illustration" />
             </div>
             <div className="w-full flex flex-col gap-4">
@@ -80,7 +86,7 @@ const SignIn = () => {
                 <input
                   onChange={handleEmail}
                   value={email}
-                  className="w-full h-10 px-4 text-base font-medium rounded-md border  outline-none shadow-md"
+                  className="w-full h-10 px-4 text-base font-medium rounded-md border outline-none shadow-md"
                   type="email"
                   placeholder="Email"
                 />

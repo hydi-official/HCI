@@ -1,15 +1,22 @@
 import React from 'react';
-import { FaUpload, FaEdit, FaLock } from 'react-icons/fa';
+import { FaUpload, FaEdit, FaLock, FaArrowLeft } from 'react-icons/fa';
 import profileImage from '../assets/images/edi.jpg';
-
+import { Link } from 'react-router-dom';
 const Profile = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold mb-6 text-center text-[#180948]">Profile</h2>
+      <div className="flex items-center mb-6">
+        <Link to='/'>
+        <div className="bg-gray-400 p-4 rounded-full mr-3">
+          <FaArrowLeft className="text-white" />
+        </div>
+        </Link>
+        <h2 className="text-4xl font-bold text-[#180948]">Profile</h2>
+      </div>
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Profile Photo */}
         <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center w-full lg:w-1/3">
-          <h3 className="text-xl font-semibold mb-4">Profile Photo</h3>
+          <h3 className="text-xl font-semibold mb-4 text-[#180948]">Profile Photo</h3>
           <img
             src={profileImage}
             alt="Profile"
@@ -26,7 +33,7 @@ const Profile = () => {
         </div>
         {/* Personal Info */}
         <div className="bg-white p-6 rounded-lg shadow-md w-full lg:w-1/3">
-          <h3 className="text-xl font-semibold mb-4">Personal Info <span className="text-gray-500">(Click to edit)</span></h3>
+          <h3 className="text-xl font-semibold mb-4 text-[#180948]">Personal Info <span className="text-gray-500">(Click to edit)</span></h3>
           <form>
             <div className="mb-4">
               <input
@@ -77,7 +84,7 @@ const Profile = () => {
         </div>
         {/* Update Password */}
         <div className="bg-white p-6 rounded-lg shadow-md w-full lg:w-1/3">
-          <h3 className="text-xl font-semibold mb-4">Update Password</h3>
+          <h3 className="text-xl font-semibold mb-4 text-[#180948]">Update Password</h3>
           <form>
             <div className="mb-4">
               <input
