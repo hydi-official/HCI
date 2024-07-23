@@ -13,6 +13,8 @@ import new1 from "../../../assets/images/products/newArrival/New1.jpg";
 import new2 from "../../../assets/images/products/newArrival/new2.jpg";
 import new3 from "../../../assets/images/products/newArrival/new3.jpg";
 import new4 from "../../../assets/images/products/newArrival/new4.jpg";
+import new5 from "../../../assets/images/products/newArrival/alicia-petresc-BciCcl8tjVU-unsplash.jpg";
+
 
 
 
@@ -107,12 +109,12 @@ const NewArrivals = () => {
         <div className="px-2">
           <Product
             _id="100005"
-            img={nii}
-            productName="Funny toys for babies"
+            img={new5}
+            productName="Ripped Pants"
             price="60.00"
             color="Mixed"
             badge={false}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="These trendy ripped pants offer a stylish, edgy look perfect for casual outings. Made from durable, high-quality denim, they provide both comfort and a modern fit. The strategically placed rips add a fashionable touch, making these pants a must-have for any fashion-forward wardrobe."
           />
         </div>
       </Slider>
