@@ -6,21 +6,20 @@ import frame1 from "../../assets/images/SignIn.png";
 import frame3 from "../../assets/images/SignUp.png";
 import { FaArrowLeft } from 'react-icons/fa';
 
-
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
-  
-  const navigate = useNavigate(); 
+
+  const navigate = useNavigate();
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
     setErrEmail("");
   };
-  
+
   const handlePassword = (e) => {
     setPassword(e.target.value);
     setErrPassword("");
@@ -70,10 +69,10 @@ const SignUp = () => {
             </Link>
           </div>
         ) : (
-          <form className="w-[500px] md:w-[450px] h-[600px] flex flex-col items-center justify-center bg-white bg-opacity-90 p-8 rounded-lg">
-             <div className="absolute top-4 left-4">
+          <form className="w-[500px] md:w-[450px] h-[600px] flex flex-col items-center justify-center bg-white bg-opacity-90 p-8 rounded-lg relative">
+            <div className="absolute top-4 left-4">
               <Link to='/'>
-                <div className="bg-[#949292] p-2 text-4xl rounded-full">
+                <div className="bg-[#949292] p-2 text-2xl rounded-full">
                   <FaArrowLeft className="text-white" />
                 </div>
               </Link>
@@ -82,34 +81,29 @@ const SignUp = () => {
               <img src={frame3} alt="Form Illustration" />
             </div>
             <div className="w-full flex flex-col gap-4">
-              {/* fullname */}
-            <div className="flex flex-col">
+              {/* Full Name */}
+              <div className="flex flex-col">
                 <input
-                  
-                  className="w-full h-10 px-4 text-base font-medium rounded-md border  outline-none shadow-md"
-                  type="email"
+                  className="w-full h-10 px-4 text-base font-medium rounded-md border outline-none shadow-md"
+                  type="text"
                   placeholder="Full Name"
                 />
-               
               </div>
               {/* Email */}
               <div className="flex flex-col">
                 <input
-                  
-                  className="w-full h-10 px-4 text-base font-medium rounded-md border  outline-none shadow-md"
+                  className="w-full h-10 px-4 text-base font-medium rounded-md border outline-none shadow-md"
                   type="email"
                   placeholder="Email"
                 />
-               
               </div>
-                {/* Phone Number */}
-            <div className="flex flex-col">
+              {/* Phone Number */}
+              <div className="flex flex-col">
                 <input
-                  
-                  className="w-full h-10 px-4 text-base font-medium rounded-md border  outline-none shadow-md"
-                  type="email"
+                  className="w-full h-10 px-4 text-base font-medium rounded-md border outline-none shadow-md"
+                  type="text"
                   placeholder="Phone Number"
-                /> 
+                />
               </div>
               {/* Password */}
               <div className="flex flex-col">
@@ -126,12 +120,11 @@ const SignUp = () => {
                   </p>
                 )}
               </div>
-              {/* Email */}
+              {/* Select Country */}
               <div className="relative flex flex-col">
                 <input
-                  
-                  className="w-full h-10 px-4 text-base font-medium rounded-md border  outline-none shadow-md pr-10"
-                  type="email"
+                  className="w-full h-10 px-4 text-base font-medium rounded-md border outline-none shadow-md pr-10"
+                  type="text"
                   placeholder="Select Country"
                 />
                 <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
@@ -149,14 +142,13 @@ const SignUp = () => {
                   </svg>
                 </div>
               </div>
-                  {/* Address */}
-            <div className="flex flex-col">
+              {/* Address */}
+              <div className="flex flex-col">
                 <input
-                  
-                  className="w-full h-10 px-4 text-base font-medium rounded-md border  outline-none shadow-md"
-                  type="email"
+                  className="w-full h-10 px-4 text-base font-medium rounded-md border outline-none shadow-md"
+                  type="text"
                   placeholder="Address"
-                /> 
+                />
               </div>
               <button
                 onClick={handleSignUp}
