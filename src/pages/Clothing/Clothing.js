@@ -7,11 +7,15 @@ import {
   newArrThree,
   newArrFour,
 } from "../../assets/images/index";
+import { FaArrowRight } from 'react-icons/fa';
+
 
 const Clothing = () => {
   return (
     <div className="w-full pb-16">
-      <Heading heading="Clothing" />
+      <div className="flex items-center justify-between px-2 mb-4">
+        <Heading heading="Blouses" />
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-2">
         <Product
           _id="100001"
@@ -58,8 +62,7 @@ const Clothing = () => {
           badge={false}
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
         />
-
-<Product
+        <Product
           _id="100001"
           img={newArrOne}
           productName="Round Table Clock"

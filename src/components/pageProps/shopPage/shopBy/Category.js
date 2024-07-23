@@ -17,7 +17,7 @@ const Category = () => {
     },
     {
       _id: 991,
-      title: "Clothing",
+      title: "Blouses",
       link: "/clothing", 
     },
     {
