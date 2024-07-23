@@ -25,7 +25,7 @@ const Accessories = () => {
           price="44.00"
           color="Black"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="These men's grey footwear pieces combine style and comfort effortlessly. Crafted with premium materials, they offer durability and a sleek, modern design. The versatile grey shade makes them perfect for any occasion, from casual outings to formal events, making them a must-have addition to any wardrobe."
         />
         <Product
           _id="100002"
@@ -34,7 +34,7 @@ const Accessories = () => {
           price="250.00"
           color="Black"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="These low dunks are the epitome of style and comfort. Featuring a sleek, low-profile design, they are crafted from premium materials for durability and long-lasting wear. Perfect for both casual and athletic activities, these versatile sneakers add a fashionable edge to any outfit."
         />
         <Product
           _id="100003"
@@ -43,7 +43,7 @@ const Accessories = () => {
           price="80.00"
           color="Mixed"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="These gray boots combine rugged durability with modern style. Made from high-quality materials, they feature a comfortable fit and sturdy sole for all-day wear. The versatile gray color makes them perfect for both casual and semi-formal occasions, making them a must-have addition to any wardrobe."
         />
         <Product
           _id="100004"
@@ -52,7 +52,7 @@ const Accessories = () => {
           price="60.00"
           color="Mixed"
           badge={false}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="These black Jordans offer a perfect blend of style and performance. Featuring a sleek, iconic design, they are crafted from premium materials for superior comfort and durability. Ideal for both athletic activities and casual wear, these versatile sneakers are a must-have for any sneaker enthusiast's collection."
         />
         {/* <Product
           _id="100005"
