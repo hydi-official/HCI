@@ -11,7 +11,7 @@ import {
 const Accessories = () => {
   return (
     <div className="w-full pb-16">
-      <Heading heading="Accessories" />
+      <Heading heading="Footwear" />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-2">
         <Product
           _id="100001"

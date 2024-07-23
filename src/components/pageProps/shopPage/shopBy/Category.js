@@ -22,14 +22,14 @@ const Category = () => {
     },
     {
       _id: 992,
-      title: "Miscellaneous",
+      title: "Dresses",
       icons: true,
       link: "/miscellaneous", 
     },
    
     {
       _id: 994,
-      title: "Others",
+      title: "pants",
       link: "/others", 
     },
   ];

@@ -11,7 +11,7 @@ import {
 const Miscellaneous = () => {
   return (
     <div className="w-full pb-16">
-      <Heading heading="Miscellaneous" />
+      <Heading heading="Dresses" />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-2">
         <Product
           _id="100001"

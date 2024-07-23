@@ -14,7 +14,7 @@ const Clothing = () => {
   return (
     <div className="w-full pb-16">
       <div className="flex items-center justify-between px-2 mb-4">
-        <Heading heading="Blouses" />
+        <Heading heading="Blouses"className='text-[#180948]' />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-2">
         <Product

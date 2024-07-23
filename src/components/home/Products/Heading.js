@@ -4,12 +4,12 @@ import { FaArrowLeft } from 'react-icons/fa';
 
 const Heading = ({ heading }) => {
   return (
-    <div className="flex items-center text-3xl font-semibold pt-4">
-      <Link to="/">
+    <div className="flex items-center text-3xl font-semibold pt-4 text-[#180948]">
+      {/* <Link to="/">
         <div className="bg-[#949292] p-2 rounded-full mr-2 text-[20px]">
           <FaArrowLeft className="text-white" />
         </div>
-      </Link>
+      </Link> */}
       <span>{heading}</span>
     </div>
   );
