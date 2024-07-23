@@ -15,9 +15,10 @@ const YearProduct = () => {
           <h1 className="text-3xl font-semibold text-primeColor">
             Product of The year
           </h1>
+
+          <h3 className="font-bold text-[#180948]">Titanium Bag</h3>
           <p className="text-base font-normal text-primeColor max-w-[600px] mr-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-            cupiditate modi amet! Facilis, aperiam quaerat.
+          Experience exceptional craftsmanship and style with this must-have bag, perfect for any outfit.
           </p>
           <Link to="/shop">
 
