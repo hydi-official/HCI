@@ -1,146 +1,110 @@
 import React from 'react';
-import { FaUser, FaEnvelope, FaPhone, FaMapMarkerAlt, FaEdit, FaLock, FaUpload } from 'react-icons/fa';
-import edi from '../assets/images/edi.jpg';
+import { FaUpload, FaEdit, FaLock } from 'react-icons/fa';
+import profileImage from '../assets/images/edi.jpg';
 
 const Profile = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold mb-6 text-center text-[#180948]">My Profile</h2>
-      <div className="flex flex-col md:flex-row items-center md:items-start bg-gray-100 p-6 rounded-lg shadow-md">
-        <div className="md:w-1/3 mb-4 md:mb-0 md:mr-8">
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      <h2 className="text-3xl font-bold mb-6 text-center text-[#180948]">Profile</h2>
+      <div className="flex flex-col lg:flex-row gap-8">
+        {/* Profile Photo */}
+        <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center w-full lg:w-1/3">
+          <h3 className="text-xl font-semibold mb-4">Profile Photo</h3>
           <img
-            src={edi}
+            src={profileImage}
             alt="Profile"
-            className="w-full h-auto rounded-full border border-gray-300"
+            className="w-40 h-40 rounded-full mb-4 border"
           />
-          <div className="mt-4">
-            <label className="block text-gray-700 font-semibold mb-2 text-[#180948]" htmlFor="file-upload">
-              Upload New Image:
-            </label>
-            <div className="flex items-center">
-              <FaUpload className="text-gray-600 mr-2" />
+          <label className="block text-gray-700 font-semibold mb-2">
+            Choose File
+            <input type="file" className="hidden" />
+          </label>
+          <button className="bg-[#180948] text-white px-4 py-2 rounded flex items-center hover:bg-black">
+            <FaUpload className="mr-2" />
+            Upload
+          </button>
+        </div>
+        {/* Personal Info */}
+        <div className="bg-white p-6 rounded-lg shadow-md w-full lg:w-1/3">
+          <h3 className="text-xl font-semibold mb-4">Personal Info <span className="text-gray-500">(Click to edit)</span></h3>
+          <form>
+            <div className="mb-4">
               <input
-                type="file"
-                id="file-upload"
+                type="text"
                 className="w-full p-2 border border-gray-300 rounded-md"
+                placeholder="Full Name"
+                value="Salim Akunor"
               />
             </div>
-          </div>
+            <div className="mb-4">
+              <input
+                type="email"
+                className="w-full p-2 border border-gray-300 rounded-md"
+                placeholder="Email"
+                value="salimakunor@gmail.com"
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                type="tel"
+                className="w-full p-2 border border-gray-300 rounded-md"
+                placeholder="Phone Number"
+                value="0244666419"
+              />
+            </div>
+            <div className="mb-4">
+              <select
+                className="w-full p-2 border border-gray-300 rounded-md"
+                value="Ghana"
+              >
+                <option value="Ghana">Ghana</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div className="mb-4">
+              <input
+                type="text"
+                className="w-full p-2 border border-gray-300 rounded-md"
+                placeholder="Address"
+                value="Jubilee Drive St., Accra"
+              />
+            </div>
+            <button className="bg-[#180948] text-white px-4 py-2 rounded flex items-center hover:bg-black">
+              <FaEdit className="mr-2" />
+              Update
+            </button>
+          </form>
         </div>
-        <div className="md:w-2/3 w-full">
-          <div className="bg-white p-6 rounded-lg shadow-md mb-4">
-            <h3 className="text-2xl font-semibold mb-4 text-[#180948]">Basic Information</h3>
-            <div className="mb-2 flex items-center">
-              <FaUser className="text-gray-600 mr-2" />
-              <div>
-                <label className="block text-gray-700 font-semibold">Full Name:</label>
-                <p className="text-gray-800">John Doe</p>
-              </div>
+        {/* Update Password */}
+        <div className="bg-white p-6 rounded-lg shadow-md w-full lg:w-1/3">
+          <h3 className="text-xl font-semibold mb-4">Update Password</h3>
+          <form>
+            <div className="mb-4">
+              <input
+                type="password"
+                className="w-full p-2 border border-gray-300 rounded-md"
+                placeholder="Enter your current password"
+              />
             </div>
-            <div className="mb-2 flex items-center">
-              <FaEnvelope className="text-gray-600 mr-2" />
-              <div>
-                <label className="block text-gray-700 font-semibold">Email:</label>
-                <p className="text-gray-800">john.doe@example.com</p>
-              </div>
+            <div className="mb-4">
+              <input
+                type="password"
+                className="w-full p-2 border border-gray-300 rounded-md"
+                placeholder="New password"
+              />
             </div>
-            <div className="mb-2 flex items-center">
-              <FaPhone className="text-gray-600 mr-2" />
-              <div>
-                <label className="block text-gray-700 font-semibold">Phone Number:</label>
-                <p className="text-gray-800">+1234567890</p>
-              </div>
+            <div className="mb-4">
+              <input
+                type="password"
+                className="w-full p-2 border border-gray-300 rounded-md"
+                placeholder="Confirm new password"
+              />
             </div>
-            <div className="mb-2 flex items-center">
-              <FaMapMarkerAlt className="text-gray-600 mr-2" />
-              <div>
-                <label className="block text-gray-700 font-semibold">Address:</label>
-                <p className="text-gray-800">123 Street, City, Country</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col lg:flex-row gap-4">
-            <div className="bg-white p-6 rounded-lg shadow-md lg:w-1/2">
-              <h3 className="text-2xl font-semibold mb-4 text-[#180948]">Update Profile</h3>
-              <form>
-                <div className="mb-4 flex items-center">
-                  <FaUser className="text-gray-600 mr-2" />
-                  <input
-                    type="text"
-                    className="w-full p-2 border border-gray-300 rounded-md"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-                <div className="mb-4 flex items-center">
-                  <FaEnvelope className="text-gray-600 mr-2" />
-                  <input
-                    type="email"
-                    className="w-full p-2 border border-gray-300 rounded-md"
-                    placeholder="Enter your email"
-                  />
-                </div>
-                <div className="mb-4 flex items-center">
-                  <FaPhone className="text-gray-600 mr-2" />
-                  <input
-                    type="tel"
-                    className="w-full p-2 border border-gray-300 rounded-md"
-                    placeholder="Enter your phone number"
-                  />
-                </div>
-                <div className="mb-4 flex items-center">
-                  <FaMapMarkerAlt className="text-gray-600 mr-2" />
-                  <input
-                    type="text"
-                    className="w-full p-2 border border-gray-300 rounded-md"
-                    placeholder="Enter your address"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="bg-[#180948] text-white px-4 py-2 rounded flex items-center hover:bg-black"
-                >
-                  <FaEdit className="mr-2" />
-                  Save Changes
-                </button>
-              </form>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md lg:w-1/2">
-              <h3 className="text-2xl font-semibold mb-4">Change Password</h3>
-              <form>
-                <div className="mb-4 flex items-center">
-                  <FaLock className="text-gray-600 mr-2" />
-                  <input
-                    type="password"
-                    className="w-full p-2 border border-gray-300 rounded-md"
-                    placeholder="Current Password"
-                  />
-                </div>
-                <div className="mb-4 flex items-center">
-                  <FaLock className="text-gray-600 mr-2" />
-                  <input
-                    type="password"
-                    className="w-full p-2 border border-gray-300 rounded-md"
-                    placeholder="New Password"
-                  />
-                </div>
-                <div className="mb-4 flex items-center">
-                  <FaLock className="text-gray-600 mr-2" />
-                  <input
-                    type="password"
-                    className="w-full p-2 border border-gray-300 rounded-md"
-                    placeholder="Confirm New Password"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="bg-[#180948] text-white px-4 py-2 rounded flex items-center hover:bg-black"
-                >
-                  <FaEdit className="mr-2" />
-                  Change Password
-                </button>
-              </form>
-            </div>
-          </div>
+            <button className="bg-[#180948] text-white px-4 py-2 rounded flex items-center hover:bg-black">
+              <FaLock className="mr-2" />
+              Update Password
+            </button>
+          </form>
         </div>
       </div>
     </div>

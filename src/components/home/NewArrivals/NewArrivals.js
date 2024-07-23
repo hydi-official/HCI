@@ -9,6 +9,8 @@ import {
   newArrFour,
 } from "../../../assets/images/index";
 
+import new1 from "../../../assets/images/products/newArrival/New1.jpg";
+
 import nii from '../../../assets/images/nii.png';
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
@@ -55,12 +57,12 @@ const NewArrivals = () => {
         <div className="px-2">
           <Product
             _id="100001"
-            img={newArrOne}
-            productName="Round Table Clock"
-            price="44.00"
-            color="Black"
+            img={new1}
+            productName="Romantic Floral Dress"
+            price="100.00"
+            color="color"
             badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="Elevate your wardrobe with our enchanting Romantic Floral Dress, designed to capture hearts and turn heads. This timeless piece is perfect for any occasion, from a casual day out to a special evening event."
           />
         </div>
         <div className="px-2">
