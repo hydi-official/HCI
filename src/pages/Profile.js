@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUser, FaEnvelope, FaPhone, FaMapMarkerAlt, FaEdit, FaLock } from 'react-icons/fa';
+import { FaUser, FaEnvelope, FaPhone, FaMapMarkerAlt, FaEdit, FaLock, FaUpload } from 'react-icons/fa';
 import edi from '../assets/images/edi.jpg';
 
 const Profile = () => {
@@ -13,6 +13,19 @@ const Profile = () => {
             alt="Profile"
             className="w-full h-auto rounded-full border border-gray-300"
           />
+          <div className="mt-4">
+            <label className="block text-gray-700 font-semibold mb-2" htmlFor="file-upload">
+              Upload New Image:
+            </label>
+            <div className="flex items-center">
+              <FaUpload className="text-gray-600 mr-2" />
+              <input
+                type="file"
+                id="file-upload"
+                className="w-full p-2 border border-gray-300 rounded-md"
+              />
+            </div>
+          </div>
         </div>
         <div className="md:w-2/3 w-full">
           <div className="bg-white p-6 rounded-lg shadow-md mb-4">
