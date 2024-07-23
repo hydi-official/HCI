@@ -5,7 +5,7 @@ import edi from '../assets/images/edi.jpg';
 const Profile = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold mb-6 text-center">My Profile</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center text-[#180948]">My Profile</h2>
       <div className="flex flex-col md:flex-row items-center md:items-start bg-gray-100 p-6 rounded-lg shadow-md">
         <div className="md:w-1/3 mb-4 md:mb-0 md:mr-8">
           <img
@@ -14,7 +14,7 @@ const Profile = () => {
             className="w-full h-auto rounded-full border border-gray-300"
           />
           <div className="mt-4">
-            <label className="block text-gray-700 font-semibold mb-2" htmlFor="file-upload">
+            <label className="block text-gray-700 font-semibold mb-2 text-[#180948]" htmlFor="file-upload">
               Upload New Image:
             </label>
             <div className="flex items-center">
