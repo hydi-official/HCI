@@ -7,7 +7,7 @@ const Profile = () => {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <div className="flex items-center mb-6">
         <Link to='/'>
-        <div className="bg-gray-400 p-4 rounded-full mr-3">
+        <div className="bg-[#949292] p-4 rounded-full mr-3">
           <FaArrowLeft className="text-white" />
         </div>
         </Link>

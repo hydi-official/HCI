@@ -73,7 +73,7 @@ const SignUp = () => {
           <form className="w-[500px] md:w-[450px] h-[600px] flex flex-col items-center justify-center bg-white bg-opacity-90 p-8 rounded-lg">
              <div className="absolute top-4 left-4">
               <Link to='/'>
-                <div className="bg-[#949292] p-3 text-4xl rounded-full">
+                <div className="bg-[#949292] p-2 text-4xl rounded-full">
                   <FaArrowLeft className="text-white" />
                 </div>
               </Link>
