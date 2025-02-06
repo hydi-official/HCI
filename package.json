@@ -17,6 +17,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "react-spring": "^9.7.4",
+    "react-toastify": "^11.0.3",
     "redux-persist": "^6.0.0",
     "slick-carousel": "^1.8.1",
     "tailwind-scrollbar": "^2.1.0",

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
-import { Link } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Breadcrumbs from '../../components/pageProps/Breadcrumbs';
 
 const AnimatedText = ({ children }) => {
@@ -14,11 +15,11 @@ const AnimatedText = ({ children }) => {
 
 const Payment = () => {
   const handleSuccessPayment = () => {
-    alert('Payment successful! Thank you for your purchase.');
+    toast.success('Payment successful! Thank you for your purchase.');
   };
 
   const handleFailedPayment = () => {
-    alert('Payment failed. Please try again later.');
+    toast.error('Payment failed. Please try again later.');
   };
 
   const initializePaystack = async () => {
@@ -29,7 +30,6 @@ const Payment = () => {
       currency: 'GHS', // Use GHS for Ghanaian Cedis
       ref: '' + Math.floor(Math.random() * 1000000000 + 1), // Unique reference for the payment
       callback: (response) => {
-        // Handle successful payment
         handleSuccessPayment();
       },
       onClose: () => {
@@ -37,12 +37,18 @@ const Payment = () => {
       },
     });
 
-    handler.openIframe(); 
+    handler.openIframe();
+  };
+
+  const handlePayOnDelivery = () => {
+    console.log('Pay on Delivery button clicked'); // Debugging log
+    toast.info('You have selected Pay on Delivery. Please ensure to have the cash ready upon delivery.');
   };
 
   return (
     <div className="max-w-container mx-auto px-4">
-      <Breadcrumbs title="Payment " />
+      <Breadcrumbs title="Payment" />
+      <ToastContainer /> {/* Ensure ToastContainer is included */}
       <div className="pb-10">
         <AnimatedText>
           <div>
@@ -51,15 +57,24 @@ const Payment = () => {
         </AnimatedText>
 
         <div className="mb-4">
-          <p>Complete your purchase by clicking the button below.</p>
+          <p>Complete your purchase by choosing a payment option below.</p>
         </div>
 
-        <button
-          onClick={initializePaystack}
-          className="bg-[#180948] text-white px-4 py-2 rounded cursor-pointer hover:bg-green-600"
-        >
-          Pay Now
-        </button>
+        <div className="flex gap-4">
+          <button
+            onClick={initializePaystack}
+            className="bg-[#180948] text-white px-4 py-2 rounded cursor-pointer hover:bg-green-600"
+          >
+            Pay Now
+          </button>
+
+          <button
+            onClick={handlePayOnDelivery}
+            className="bg-gray-500 text-white px-4 py-2 rounded cursor-pointer hover:bg-gray-700"
+          >
+            Pay on Delivery
+          </button>
+        </div>
       </div>
     </div>
   );
