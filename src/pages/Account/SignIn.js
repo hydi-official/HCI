@@ -11,8 +11,9 @@ const SignIn = () => {
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
-  
-  const navigate = useNavigate(); // Initialize the useNavigate hook
+  const [resetMsg, setResetMsg] = useState("");
+
+  const navigate = useNavigate(); // Initialize navigation
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -24,7 +25,7 @@ const SignIn = () => {
     setErrPassword("");
   };
 
-  const handleSignUp = (e) => {
+  const handleSignIn = (e) => {
     e.preventDefault();
 
     if (!email) {
@@ -37,11 +38,23 @@ const SignIn = () => {
 
     if (email && password) {
       setSuccessMsg(
-        `Thank you for signing in! We are processing your access and will send additional assistance to your email at ${email}`
+        `Welcome back! Logging you in...`
       );
-      setEmail("");
-      setPassword("");
-      navigate("/"); // Navigate to the home page
+      setTimeout(() => {
+        navigate("/");
+      }, 2000); // Simulate login and redirect
+    }
+  };
+
+  // Password Reset Functionality
+  const handleForgotPassword = () => {
+    if (!email) {
+      setErrEmail("Enter your email to reset password.");
+    } else {
+      setResetMsg(`A password reset link has been sent to ${email}`);
+      setTimeout(() => {
+        setResetMsg("");
+      }, 4000);
     }
   };
 
@@ -59,18 +72,11 @@ const SignIn = () => {
             <p className="w-full px-4 py-10 text-green-500 font-medium font-titleFont">
               {successMsg}
             </p>
-            <Link to="/">
-              {/* <button
-                className="w-full h-10 bg-primeColor text-gray-200 rounded-md text-base font-titleFont font-semibold tracking-wide hover:bg-black hover:text-white duration-300"
-              >
-                Sign Up
-              </button> */}
-            </Link>
           </div>
         ) : (
-          <form className="relative w-[500px] md:w-[450px] h-[500px] flex flex-col items-center justify-center bg-white bg-opacity-90 p-8 rounded-lg">
+          <form className="relative w-[500px] md:w-[450px] h-[500px] flex flex-col items-center justify-center bg-white bg-opacity-90 p-8 rounded-lg shadow-lg">
             <div className="absolute top-4 left-4">
-              <Link to='/'>
+              <Link to="/">
                 <div className="bg-[#949292] p-2 text-4xl rounded-full">
                   <FaArrowLeft className="text-white" />
                 </div>
@@ -88,13 +94,9 @@ const SignIn = () => {
                   value={email}
                   className="w-full h-10 px-4 text-base font-medium rounded-md border outline-none shadow-md"
                   type="email"
-                  placeholder="Email"
+                  placeholder="Enter your email"
                 />
-                {errEmail && (
-                  <p className="text-sm text-red-500 font-titleFont font-semibold px-4">
-                    {errEmail}
-                  </p>
-                )}
+                {errEmail && <p className="text-sm text-red-500 font-semibold px-4">{errEmail}</p>}
               </div>
               {/* Password */}
               <div className="flex flex-col">
@@ -104,26 +106,34 @@ const SignIn = () => {
                   value={password}
                   className="w-full h-10 px-4 text-base font-medium rounded-md border outline-none shadow-md"
                   type="password"
-                  placeholder="Password"
+                  placeholder="Enter your password"
                 />
-                {errPassword && (
-                  <p className="text-sm text-red-500 font-titleFont font-semibold px-4">
-                    {errPassword}
-                  </p>
-                )}
+                {errPassword && <p className="text-sm text-red-500 font-semibold px-4">{errPassword}</p>}
               </div>
+              {/* Forgot Password */}
+              <div className="text-right">
+                <button
+                  type="button"
+                  onClick={handleForgotPassword}
+                  className="text-sm text-blue-600 hover:underline"
+                >
+                  Forgot Password?
+                </button>
+              </div>
+              {resetMsg && <p className="text-sm text-green-500">{resetMsg}</p>}
+              
+              {/* Sign In Button */}
               <button
-                onClick={handleSignUp}
+                onClick={handleSignIn}
                 className="bg-primeColor hover:bg-black text-white cursor-pointer w-full text-base font-medium h-10 rounded-md duration-300"
               >
                 Sign In
               </button>
+
               <p className="text-sm text-center font-titleFont font-medium mt-4">
                 Don't have an account?{" "}
                 <Link to="/signup">
-                  <span className="hover:text-blue-600 duration-300">
-                    Sign Up
-                  </span>
+                  <span className="hover:text-blue-600 duration-300">Sign Up</span>
                 </Link>
               </p>
             </div>
